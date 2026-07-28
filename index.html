@@ -21,7 +21,12 @@
       </span>
       <span class="logo-text brand-text">Fenix Automation</span>
     </div>
-    <nav>
+    <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav">
       <a href="#tjanster">Tjänster</a>
       <a href="#om-oss">Om oss</a>
       <a href="#kontakt">Kontakt</a>
@@ -55,6 +60,7 @@
       <div class="card">
         <h3>Felsökning</h3>
         <p>Snabb och effektiv felsökning av befintliga anläggningar och system.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -99,6 +105,23 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.getElementById('site-nav');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('nav-open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('nav-open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 </script>
 </body>
 </html>
