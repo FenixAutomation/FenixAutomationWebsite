@@ -6,6 +6,9 @@
 <title>Fenix Automation</title>
 <meta name="description" content="Fenix Automation - konsultverksamhet inom automation, SCADA och PLC-programmering för vatten- och avloppsreningsanläggningar.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230b3b52%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%232fb8a6%22 font-family=%22sans-serif%22>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,8 +16,10 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo">
-      <span class="logo-mark">F</span>
-      <span class="logo-text">Fenix Automation</span>
+      <span class="logo-mark">
+        <img src="FenixLogo.webp" alt="Fenix Automation logo">
+      </span>
+      <span class="logo-text brand-text">Fenix Automation</span>
     </div>
     <nav>
       <a href="#tjanster">Tjänster</a>
@@ -26,24 +31,22 @@
 
 <section class="hero">
   <div class="container">
-    <h1>Automation, SCADA &amp; PLC för vatten- och avloppsreningsanläggningar</h1>
-    <p class="hero-sub">Vi hjälper er med programmering och driftsättning till service och felsökning.</p>
+    <h1>Automation, SCADA &amp; PLC för vatten- och avloppsanläggningar</h1>
+    <p class="hero-sub">Vi hjälper er med allt från programmering och driftsättning till service och felsökning.</p>
     <a class="btn" href="#kontakt">Kontakta oss</a>
   </div>
 </section>
 
 <section id="tjanster" class="section">
   <div class="container">
-    <h2>Våra tjänster</h2>
-    <p class="section-intro">Fenix Automation tillhandahåller kompletta lösningar inom automation. Vi har mångårig erfarenhet av SCADA och PLC-programmering. Vårt primära fokus är anläggningar inom vatten- och avloppsrening.</p>
     <div class="cards">
       <div class="card">
         <h3>Programmering</h3>
-        <p>PLC- och SCADA-programmering anpassad efter er anläggnings behov.</p>
+        <p>PLC programmering och implementation i SCADA anpassad efter era behov.</p>
       </div>
       <div class="card">
         <h3>Driftsättning</h3>
-        <p>Idrifttagning av styrsystem och automationslösningar på plats.</p>
+        <p>Idrifttagning av styrsystem och automationslösningar på plats eller på distans.</p>
       </div>
       <div class="card">
         <h3>Service</h3>
@@ -52,7 +55,6 @@
       <div class="card">
         <h3>Felsökning</h3>
         <p>Snabb och effektiv felsökning av befintliga anläggningar och system.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -60,28 +62,30 @@
 <section id="om-oss" class="section alt">
   <div class="container">
     <h2>Om oss</h2>
-    <p class="section-intro">Vi är ett konsultbolag med lång erfarenhet av automationslösningar för vatten- och avloppsbranschen, och arbetar nära våra kunder genom hela processen - från programmering till daglig drift.</p>
+    <p class="section-intro">Vi är ett nystartat konsultbolag grundat av personer med mångårig erfarenhet av automation inom VA branschen. Vi är vana med täta samarbeten med våra kunder för att hitta lösningar på problem eller förbättringar i befintliga anläggningar.<br> Vi arbetar huvudsakligen med PLC och HMI från Mitsubishi, Siemens och ABB.<br ></p>
   </div>
 </section>
 
 <section id="kontakt" class="section">
   <div class="container">
-    <h2>Kontakt</h2>
     <div class="contacts">
       <div class="contact-card">
+        <img class="contact-photo" src="adb.webp" alt="Adrian Björklund">
         <h3>Adrian Björklund</h3>
         <p><a href="tel:+46724565577">072-456 55 77</a></p>
-        <p><a href="mailto:adrian.bjorklund@fenixautomation.se">adrian.bjorklund@fenixautomation.se</a></p>
+        <p class="email"><a href="mailto:adrian.bjorklund@fenixautomation.se">adrian.bjorklund@fenixautomation.se</a></p>
       </div>
       <div class="contact-card">
+        <img class="contact-photo" src="daa.webp" alt="David Anemyr">
         <h3>David Anemyr</h3>
         <p><a href="tel:+46767656011">076-765 60 11</a></p>
-        <p><a href="mailto:david.anemyr@fenixautomation.se">david.anemyr@fenixautomation.se</a></p>
+        <p class="email"><a href="mailto:david.anemyr@fenixautomation.se">david.anemyr@fenixautomation.se</a></p>
       </div>
       <div class="contact-card">
-        <h3>Andreas Jakobsson</h3>
+        <img class="contact-photo" src="aja.webp" alt="Andreas Jakobson">
+        <h3>Andreas Jakobson</h3>
         <p><a href="tel:+46761339330">076-133 93 30</a></p>
-        <p><a href="mailto:andreas.jakobsson@fenixautomation.se">andreas.jakobsson@fenixautomation.se</a></p>
+        <p class="email"><a href="mailto:andreas.jakobson@fenixautomation.se">andreas.jakobson@fenixautomation.se</a></p>
       </div>
     </div>
   </div>
@@ -89,7 +93,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <span id="year"></span> Fenix Automation</p>
+    <p>&copy; <span id="year"></span> <span class="brand-text">Fenix Automation</span></p>
   </div>
 </footer>
 
