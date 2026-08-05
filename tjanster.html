@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y5WQHTP21"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Y5WQHTP21');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vår expertis</title>
 <link rel="icon" type="image/svg+xml" href="Icon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tourney:wght@700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
   :root{
@@ -255,7 +243,16 @@
   </div>
 </section>
 
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> <span class="brand-text">Fenix Automation</span></p>
+    <p class="footer-org">Organisationsnummer 559588-2597</p>
+  </div>
+</footer>
+
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   const navToggle = document.querySelector('.nav-toggle');
   const siteNav = document.getElementById('site-nav');
 
